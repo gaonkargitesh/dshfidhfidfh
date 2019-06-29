@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormAcrivirt">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/name"
+        />
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Male"
+            android:id="@+id/male"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Female"
+            android:id="@+id/female"
+            />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cycle"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup"
+        android:hint="Cycling"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/read"
+        app:layout_constraintTop_toBottomOf="@id/cycle"
+        android:hint="Reading"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swim"
+        app:layout_constraintTop_toBottomOf="@id/read"
+        android:hint="Swimming"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        app:layout_constraintTop_toBottomOf="@id/swim"
+        android:hint="Submit"
+
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

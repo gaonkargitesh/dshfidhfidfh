@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        app:layout_constraintTop_toBottomOf="@id/change"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/update"
+        android:layout_margin="8dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:text="Update"
+        app:layout_constraintLeft_toRightOf="@id/add"
+        app:layout_constraintRight_toLeftOf="@id/delete"
+        app:layout_constraintTop_toBottomOf="@id/change"
+        android:layout_margin="8dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:text="DELETE"
+        app:layout_constraintLeft_toRightOf="@id/update"
+        app:layout_constraintTop_toBottomOf="@id/change"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:hint="Search"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/change"
+        android:hint="Enter new hobby"
+        app:layout_constraintTop_toBottomOf="@id/search"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/add" />
+
+
+</android.support.constraint.ConstraintLayout>
